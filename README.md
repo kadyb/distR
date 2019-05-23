@@ -28,3 +28,5 @@ r = raster("DTM.tif")
 dist_Acc = distAcc(p, r)
 plot(dist_Acc[[1:5]]) # plot selected rasters
 ```
+## Sample output:
+![Sample output](/img/sample_output.png)
