@@ -12,11 +12,11 @@ Calculate the XY(Z) Euclidean distance between vector points. If you want to inc
 p = st_read("points.gpkg")
 r = raster("DTM.tif")
 dist_XYZ = dist(p, r, "XYZ")
-plot(dist_XYZ[[1:5]])
+plot(dist_XYZ[[1:5]]) # plot selected rasters
 ```
 
 ## distAcc.R
-Calculate the cumulative distance between vector points using the terrain elevation.. Function requires these arguments:
+Calculate the cumulative distance between vector points using the terrain elevation. Function requires these arguments:
 - `points` - sf point layer
 - `raster` - raster in the metric coordinate system
 - `directions` - direction of the pixel connection (4, 8, 16 or matrix)
@@ -26,5 +26,5 @@ Calculate the cumulative distance between vector points using the terrain elevat
 p = st_read("points.gpkg")
 r = raster("DTM.tif")
 dist_Acc = distAcc(p, r)
-plot(dist_Acc[[1:5]])
+plot(dist_Acc[[1:5]]) # plot selected rasters
 ```
